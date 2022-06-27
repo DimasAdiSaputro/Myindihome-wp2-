@@ -37,6 +37,7 @@ class User extends CI_Controller
             $this->load->view('template/logged_in_navbar');
             $this->load->view('pages/dashboard/user/edit_profile');
             $this->load->view('template/footer');
+            $this->load->view('pages/dashboard/user/bantuan');
         } else {
             if ($this->input->post('nama') == $this->session->userdata('nama') && $this->input->post('tel') == $this->session->userdata('tel')) {
                 $this->session->set_flashdata('error_msg', 'Tidak Ada Perubahan Akun!');

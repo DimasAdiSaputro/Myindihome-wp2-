@@ -76,4 +76,13 @@ class Keluhan extends CI_Controller
         $this->load->view('pages/keluhan/riwayat', $data);
         $this->load->view('template/footer');
     }
+
+    public function bantuan()
+    {
+        $data['title'] = "Bantuan";
+        $this->load->view('template/header');
+        $this->load->view('template/logged_in_navbar');
+        $this->load->view('pages/dashboard/user/bantuan');
+        $this->load->view('template/footer');
+    }
 }
